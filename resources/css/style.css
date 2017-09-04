@@ -1,9 +1,11 @@
 html {
   font-size: 16px;
+
 }
 
 body {
-
+  margin: 0;
+  padding: 0;
 }
 
 /* CSS for header block */
@@ -39,6 +41,8 @@ span a {
 /* CSS for Maincontent block. This is where master content will be displayed*/
 .main {
   display: flex;
+  padding: 0;
+  margin: 1rem;
 }
 
 .maincontentblock {
@@ -52,17 +56,29 @@ span a {
 
 /* CSS for sidebar block. This is where news and event information will be posted*/
 .sidebar {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 30%;
 }
 
 .sidebarcontainer {
+  display: block;
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
+
+.sidebarphoto {
+  float: left;
+  margin-right: 0.75rem;
+}
+
 
 /* CSS stying for the Footer section */
 footer {
   background-color: black;
   color: white;
+}
+
+footer p {
+  margin-left: 1rem;
 }
